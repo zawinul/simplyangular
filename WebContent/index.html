@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>SimplyAngular</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	
+	<script>
+		var APPNAME = 'simplyangular';
+	</script>
+
+	<!-- JQUERY -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+
+	<!--  angular +dipendenze  -->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-i18n/angular-locale_it-it.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>	    
+	<script src='bower_components/angular-upload/angular-upload.min.js'></script>   
+	<script src='bower_components/angular-animate/angular-animate.min.js'></script>
+	<script src="bower_components/isteven-angular-multiselect/isteven-multi-select.js"></script>  <!-- ENG2007 -->
+    
+	<script src="scripts/fs-ajax.js"></script>
+	<script src="scripts/fs-stati.js"></script>
+	<script src="scripts/app.js"></script>
+    </head> 
+   
+    <body>
+	    <div id="angular-main" style="height:100%">
+	        <div ui-view=""   style="height:100%"></div>
+	    </div>
+    </body>
+
+</html>

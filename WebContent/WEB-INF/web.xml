@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="simplyangular">
+
+	<display-name>simplyangular</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<filter>
+		<filter-name>fsfilter</filter-name>
+		<filter-class>it.eng.fs.web.FSWebFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>fsfilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<listener>
+		<listener-class>it.eng.fs.web.FSContextListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>it.eng.fs.web.FSSessionListener</listener-class>
+	</listener>
+
+
+	<servlet>
+		<servlet-name>AjaxServlet</servlet-name>
+		<display-name>ProtocolloAjax</display-name>
+		<servlet-class>it.eng.fs.ajax.AjaxServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AjaxServlet</servlet-name>
+		<url-pattern>/ajax/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UploadServlet</servlet-name>
+		<display-name>UploadServlet</display-name>
+		<servlet-class>it.eng.fs.web.upload.UploadServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/upload/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DownloadServlet</servlet-name>
+		<display-name>Download</display-name>
+		<servlet-class>it.eng.fs.web.download.DownloadServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DownloadServlet</servlet-name>
+		<url-pattern>/download/*</url-pattern>
+	</servlet-mapping>
+
+</web-app>
+
