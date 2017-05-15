@@ -13,7 +13,7 @@
         
   anche più di una volta in caso di errori vari di comunicazione
 
-  * quello che si trova nella directory è un progetto pronto per eclipse, a parte qualche adattamento di puntamento al server
+  * quello che si trova nella directory è un progetto pronto per eclipse, a parte qualche adattamento di puntamento al server..
 
 
 
