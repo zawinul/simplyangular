@@ -54,6 +54,16 @@ var stati_applicazione = [
 			'views/report/report.js'
 		]
 	},
+	{
+		name: 'dashboard.spotify',
+		url: '/spotify',
+		templateUrl: 'views/spotify/spotify.html',
+		controller: "spotifyController",
+		dipendenze: [
+			'views/spotify/spotify.js',
+			'views/spotify/spotify.css'
+		]
+	}
 
 ]
 

@@ -1,0 +1,39 @@
+.spotify {
+	padding:20px;	
+}
+
+.spotify .query {
+	width: 200px;
+}
+
+.spotify .album {
+	background-color:white;
+	border:1px solid gray;
+	padding:4px;
+	margin:4px;
+	overflow:hidden;
+}
+
+.spotify .album-img {
+	max-height:150px;
+	float:left;
+}
+
+.spotify .tracks {
+	float:left;
+	padding:8px;
+}
+
+.spotify .activelink {
+	color:#000080;
+	cursor:pointer
+}
+
+.spotify .activelink.playing {
+	font-weight: bold;
+	background-color:#fffff0;
+}
+
+.spotify .inactivelink {
+	color:#c0c0c0;
+}

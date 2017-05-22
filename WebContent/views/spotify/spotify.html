@@ -1,0 +1,15 @@
+<div class="spotify">
+    <h2>Search for an Artist</h2>
+    <input type="text" class="query" value="" class="form-control" />
+    <div class="search btn btn-primary" ng-click="doSearch()">Search</div>
+	<div ng-repeat="a in albums" class="album">
+		<div>{{a.name}}</div>
+		<img class="album-img" src="{{a.images[0].url}}" ng-click="getTracks(a)" />
+		<div class="tracks">
+			<div ng-show="a.tracks" ng-repeat="t in a.tracks.items">
+				<div ng-show="t.preview_url"  ng-click="play(t)" class="activelink" ng-class={playing:t.suona}>{{t.name}}</div>
+				<div ng-show="!t.preview_url" class="inactivelink">{{t.name}}</div>
+			</div>
+		</div>
+	</div>
+</div>
